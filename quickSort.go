@@ -54,6 +54,8 @@ func sortB(array []int, left, right int) {
 	sortB(array, low+1, right)
 
 }
+
+//QuickSort : sort
 func QuickSort(array []int, bigMod bool) {
 	if bigMod {
 		sortB(array, 0, len(array)-1)
