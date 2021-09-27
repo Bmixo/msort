@@ -1,7 +1,17 @@
-package msort
+package bubble_sort
 
-// BubbleSort : sort nunmber from array
-func BubbleSort(array []int, bigMod bool) {
+type MBubbleSort struct {
+}
+
+var BubbleSort *MBubbleSort
+
+func Init() *MBubbleSort {
+	BubbleSort = &MBubbleSort{}
+	return BubbleSort
+}
+
+// BubbleSort : sort number from array
+func (m *MBubbleSort) BubbleSort(array []int, bigMod bool) {
 	length := len(array)
 	if bigMod {
 		for i := 0; i < length; i++ {

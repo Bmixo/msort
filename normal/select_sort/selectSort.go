@@ -1,7 +1,17 @@
-package msort
+package select_sort
+
+type MSelectSort struct {
+}
+
+var SelectSort *MSelectSort
+
+func Init() *MSelectSort {
+	SelectSort = &MSelectSort{}
+	return SelectSort
+}
 
 // SelectSort : sort number from array
-func SelectSort(array []int, bigMod bool) {
+func (m *MSelectSort) SelectSort(array []int, bigMod bool) {
 	length := len(array)
 	if len(array) <= 1 {
 		return

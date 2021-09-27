@@ -1,4 +1,14 @@
-package msort
+package merge_sort
+
+type MMergeSort struct {
+}
+
+var MergeSort *MMergeSort
+
+func Init() *MMergeSort {
+	MergeSort = &MMergeSort{}
+	return MergeSort
+}
 
 //Merge : sort
 func mergeB(array []int, p, q, r int) {
@@ -69,15 +79,14 @@ func mergeS(array []int, p, q, r int) {
 }
 
 // MergeSort : sort
-func MergeSort(array []int, p int, r int, bigMode bool) {
+func (m *MMergeSort) MergeSort(array []int, p int, r int, bigMode bool) {
 
 	if p < r {
 
 		q := (p + r) / 2
-		MergeSort(array, p, q, bigMode)
-		MergeSort(array, q+1, r, bigMode)
+		m.MergeSort(array, p, q, bigMode)
+		m.MergeSort(array, q+1, r, bigMode)
 		if bigMode {
-
 			mergeB(array, p, q, r)
 		} else {
 			mergeS(array, p, q, r)

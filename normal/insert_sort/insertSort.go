@@ -1,7 +1,17 @@
-package msort
+package insert_sort
+
+type MInsertSort struct {
+}
+
+var InsertSort *MInsertSort
+
+func Init() *MInsertSort {
+	InsertSort = &MInsertSort{}
+	return InsertSort
+}
 
 // InsertSort : sort
-func InsertSort(array []int, bigMod bool) {
+func (m *MInsertSort) InsertSort(array []int, bigMod bool) {
 	length := len(array)
 	if length <= 1 {
 		return

@@ -1,4 +1,14 @@
-package msort
+package quick_sort
+
+type MQuickSort struct {
+}
+
+var QuickSort *MQuickSort
+
+func Init() *MQuickSort {
+	QuickSort = &MQuickSort{}
+	return QuickSort
+}
 
 func sortS(array []int, left, right int) {
 	if left >= right {
@@ -56,7 +66,7 @@ func sortB(array []int, left, right int) {
 }
 
 //QuickSort : sort
-func QuickSort(array []int, bigMod bool) {
+func (m *MQuickSort) QuickSort(array []int, bigMod bool) {
 	if bigMod {
 		sortB(array, 0, len(array)-1)
 		return
