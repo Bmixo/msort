@@ -1,4 +1,4 @@
-module msort
+module github.com/Bmixo/msort
 
 go 1.17
 
