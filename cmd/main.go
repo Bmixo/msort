@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"msort"
+	"github.com/Bmixo/msort"
 	"time"
 )
 

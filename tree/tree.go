@@ -1,6 +1,6 @@
 package trees
 
-import "msort/tree/interval"
+import "github.com/Bmixo/msort/tree/interval"
 
 var Tree *MTree
 

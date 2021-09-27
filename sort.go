@@ -1,8 +1,8 @@
 package msort
 
 import (
-	"msort/normal"
-	trees "msort/tree"
+	"github.com/Bmixo/msort/normal"
+	trees "github.com/Bmixo/msort/tree"
 )
 
 var Sore *MMSort

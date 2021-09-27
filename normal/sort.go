@@ -1,11 +1,11 @@
 package normal
 
 import (
-	"msort/normal/bubble_sort"
-	"msort/normal/insert_sort"
-	"msort/normal/merge_sort"
-	"msort/normal/quick_sort"
-	"msort/normal/select_sort"
+	"github.com/Bmixo/msort/normal/bubble_sort"
+	"github.com/Bmixo/msort/normal/insert_sort"
+	"github.com/Bmixo/msort/normal/merge_sort"
+	"github.com/Bmixo/msort/normal/quick_sort"
+	"github.com/Bmixo/msort/normal/select_sort"
 )
 
 var Normal *MNormal
